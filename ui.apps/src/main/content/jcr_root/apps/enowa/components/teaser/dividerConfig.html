@@ -1,0 +1,89 @@
+<style>
+
+
+	/* MAIN CONTAINERS ================================================================ */
+    /* ================================================================================ */
+
+        .enowaDividerMainContainer{
+
+            width:100%;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:0 auto;
+            position:relative;
+            text-align:center;
+            transition:all 600ms ease;
+            -o-transition:all 600ms ease;
+            -ms-transition:all 600ms ease;
+            -moz-transition:all 600ms ease;
+            -webkit-transition:all 600ms ease;
+
+        }
+
+
+
+
+
+
+	/* DEFAULT STATES ================================================================== */
+    /* ================================================================================= */
+
+        /* DEFAULT DIVIDER LINE ======================================================== */
+        /* ============================================================================= */
+
+            .enowaDividerContentResizer{
+
+                width:800px;
+                height:2px;
+                margin:0px auto;
+                position:relative;
+                transition:all 600ms ease;
+                -o-transition:all 600ms ease;
+                -ms-transition:all 600ms ease;
+                -moz-transition:all 600ms ease;
+                -webkit-transition:all 600ms ease;
+
+            }
+
+                .enowaDividerLineActualDefaultStyle{
+
+                    width:100%;
+                    height:2px;
+                    margin:0px auto;
+                    position:relative;
+                    background:#E3E3E3;
+                    transition:all 600ms ease;
+                    -o-transition:all 600ms ease;
+                    -ms-transition:all 600ms ease;
+                    -moz-transition:all 600ms ease;
+                    -webkit-transition:all 600ms ease;
+
+                }
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<!-- MAIN CONTAINER =================================================================== -->
+<!-- ================================================================================== -->
+
+    <div class="enowaDividerMainContainer">
+
+        <div class="enowaDividerContentResizer">
+
+            <div class="enowaDividerLineActual${properties.dividerStyle || 'Default'}Style">
+
+            </div>
+
+        </div>
+
+    </div>
