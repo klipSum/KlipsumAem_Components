@@ -47,13 +47,88 @@
         /* DEFAULT GALLERY SLIDER CONTENT ============================================== */
         /* ============================================================================= */
 
+            /* PAGE DEFAULT BANNER CONTAINER =========================================== */
+            /* ========================================================================= */
+
+                .enowaGallerySliderDefaultBanner{
+
+                    width:100%;
+                    display:block;
+                    padding:50px 0px;
+                    overflow:hidden;
+                    position:relative;
+                    background:#FFFFFF;
+                    border-radius:20px;
+                    box-shadow:0px 30px 30px -20px rgba(0,0,0,0.3);
+                    transition:all 600ms ease;
+                    -o-transition:all 600ms ease;
+                    -ms-transition:all 600ms ease;
+                    -moz-transition:all 600ms ease;
+                    -webkit-transition:all 600ms ease;
+
+                }
+
+                    .enowaGallerySliderDefaultBannerContentResizer{
+
+                        width:100%;
+                        height:100%;
+                        position:relative;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    }
+
+
+                        /* HEADLINE CONTAINER ========================================= */
+                        /* ============================================================ */
+
+                            .enowaGallerySliderDefaultBannerContentHeadlineContainer{
+
+                                width:80%;
+                                height:100%;
+                                margin:0px auto;
+                                position:relative;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .enowaGallerySliderDefaultBannerContentHeadlineText{
+
+                                    font-size:20px;
+                                    font-weight:900;
+                                    letter-spacing:1px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+
+
+
+
+
+
+                            
+
             /* PAGE GALLERY SLIDER CONTAINER =========================================== */
             /* ========================================================================= */
 
                 .enowaGallerySliderElement{
 
                     width:100%;
+                    display:block;
                     padding:50px 0px;
+                    overflow:hidden;
                     position:relative;
                     background:#FFFFFF;
                     border-radius:20px;
@@ -109,6 +184,7 @@
                                         width:100%;
                                         height:100%;
                                         float:left;
+                                        overflow:hidden;
                                         position:relative;
                                         transition:all 600ms ease;
                                         -o-transition:all 600ms ease;
@@ -186,6 +262,7 @@
                                                             .enowaGallerySliderSlideTextContentSideHeadlineContainer{
 
                                                                 width:100%;
+                                                                text-transform:uppercase;
                                                                 transition:all 600ms ease;
                                                                 -o-transition:all 600ms ease;
                                                                 -ms-transition:all 600ms ease;
@@ -199,7 +276,7 @@
                                                                     width:100%;
                                                                     font-size:20px;
                                                                     font-weight:900;
-                                                                    letter-spacing:0.5px;
+                                                                    letter-spacing:2px;
                                                                     transition:all 600ms ease;
                                                                     -o-transition:all 600ms ease;
                                                                     -ms-transition:all 600ms ease;
@@ -217,6 +294,7 @@
                                                             .enowaGallerySliderSlideTextContentSideBodyContainer{
 
                                                                 width:100%;
+                                                                line-height:30px;
                                                                 transition:all 600ms ease;
                                                                 -o-transition:all 600ms ease;
                                                                 -ms-transition:all 600ms ease;
@@ -449,10 +527,11 @@
                                                 .enowaGallerySliderSlideImageContentSideContainer{
 
                                                     width:40%;
-                                                    height:max-content;
+                                                    height:100%;
+                                                    right:0;
                                                     float:left;
-                                                    display:inline-table;
-                                                    position:relative;
+                                                    position:absolute;
+                                                    background:#ec9191;
                                                     transition:all 600ms ease;
                                                     -o-transition:all 600ms ease;
                                                     -ms-transition:all 600ms ease;
@@ -464,7 +543,7 @@
                                                     .enowaGallerySliderSlideImageContentSideContentResizer{
 
                                                         width:100%;
-                                                        height:max-content;
+                                                        height:100%;
                                                         top:0;
                                                         left:0;
                                                         right:0;
@@ -488,8 +567,7 @@
                                                             right:0;
                                                             bottom:0;
                                                             margin:auto;
-                                                            display:inline-table;
-                                                            position:relative;
+                                                            position:absolute;
                                                             transition:all 600ms ease;
                                                             -o-transition:all 600ms ease;
                                                             -ms-transition:all 600ms ease;
@@ -502,12 +580,7 @@
 
                                                                 width:150px;
                                                                 height:150px;
-                                                                top:0;
-                                                                left:0;
-                                                                right:0;
-                                                                bottom:0;
                                                                 margin:auto;
-                                                                position:absolute;
                                                                 background:#2C2C2C;
                                                                 transition:all 600ms ease;
                                                                 -o-transition:all 600ms ease;
@@ -585,7 +658,7 @@
                                             bottom:0;
                                             margin:auto;
                                             border:2px solid #3A5668;
-                                            opacity:1;
+                                            opacity:0;
                                             display:block;
                                             position:absolute;
                                             background:#FFFFFF;
@@ -610,7 +683,7 @@
                                                     height:100%;
                                                     cursor:pointer;
                                                     z-index:1;
-                                                    display:block;
+                                                    display:none;
                                                     position:absolute;
                                                     transition:all 600ms ease;
                                                     -o-transition:all 600ms ease;
@@ -747,7 +820,6 @@
                                             width:100%;
                                             height:100%;
                                             top:0;
-                                            left:0;
                                             right:0;
                                             bottom:0;
                                             margin:auto;
@@ -900,6 +972,35 @@
 
         <div class="enowaGallerySliderContentResizer">
 
+            <!-- PAGE DEFAULT BANNER CONTAINER ======================================== -->
+            <!-- ====================================================================== -->
+
+                <div class="enowaGallerySliderDefaultBanner">
+
+                    <div class="enowaGallerySliderDefaultBannerContentResizer">
+
+
+
+                        <!-- HEADLINE CONTAINER ======================================= -->
+                        <!-- ========================================================== -->
+
+                            <div class="enowaGallerySliderDefaultBannerContentHeadlineContainer">
+
+                                <div class="enowaGallerySliderDefaultBannerContentHeadlineText">
+
+                                    Double click to get started
+
+                                </div>
+
+                            </div>
+
+
+
+
+                    </div>
+
+                </div>
+
             <!-- PAGE GALLERY SLIDER CONTAINER ======================================== -->
             <!-- ====================================================================== -->
 
@@ -911,9 +1012,20 @@
                     <!-- GALLERY SLIDER SLIDES CONTAINER ============================== -->
                     <!-- ============================================================== -->
 
-                        <div class="enowaGallerySliderSlidesContainer">
+                        <div 
+                        
+                            class="enowaGallerySliderSlidesContainer"
+                            data-sly-list.slides="${resource.children}"
+                            
+                        >
 
-                            <div class="enowaGallerySliderMover">
+                            <div 
+                            
+                                class="enowaGallerySliderMover"
+                                data.sly.test="${slides.name == 'slides'}"
+                                data-sly-list.items="${slides.children}"
+                                
+                            >
 
 
                                 <!-- GALLERY SLIDER SLIDE BLOCK ======================= -->
@@ -921,7 +1033,11 @@
 
                                     <div class="enowaGallerySliderSlideBlock">
 
-                                        <div class="enowaGallerySliderSlideBlockContentResizer">
+                                        <div 
+                                        
+                                            class="enowaGallerySliderSlideBlockContentResizer"
+                                            
+                                        >
 
 
 
@@ -943,7 +1059,7 @@
 
                                                                 <div class="enowaGallerySliderSlideTextContentSideHeadlineText">
 
-                                                                    Welcome to ENOWA
+                                                                    ${items.valueMap.sldHeadline}
 
                                                                 </div>
 
@@ -959,10 +1075,7 @@
 
                                                                 <div class="enowaGallerySliderSlideTextContentSideBodyText">
 
-                                                                    Welcome to ENOWA, your trusted electricity provider delivering 
-                                                                    reliable service and smarter ways to manage your energy. 
-                                                                    We're here to make your experience simple, transparent, 
-                                                                    and built around your needs.
+                                                                    ${items.valueMap.sldBody @context='html'}
 
                                                                 </div>
 
@@ -979,7 +1092,8 @@
                                                                 <a 
 
                                                                     class="enowaGallerySliderSlideTextContentSideCallToActionButtonLinkContainer"
-                                                                    href="#"
+                                                                    data-sly-test="${items.valueMap.sldCtaButtonShowHide && items.valueMap.sldCtaButtonLinkURL}"
+                                                                    href="${items.valueMap.sldCtaButtonLinkURL @ extension='html'}"
 
                                                                 >
 
@@ -990,7 +1104,7 @@
 
                                                                             <div class="enowaGallerySliderSlideTextContentSideCallToActionButtonTextContentSideText">
 
-                                                                                Explore
+                                                                                ${items.valueMap.sldCtaButtonLabel || 'Explore'}
 
                                                                             </div>
 
@@ -1196,3 +1310,533 @@
         </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+    <script defer>
+
+
+        // VARIABLES FOR USE =========================================================== //
+        // ============================================================================= //
+
+            // OBJECTS FROM PAGE ======================================================= //
+            // ========================================================================= //
+
+                // GALLERY SLIDER NAVIGATION BUTTONS AND CLICKERS ====================== //
+                // ===================================================================== //
+
+                    var getGallerySlidesNavigationContainerMain = document.querySelector(`.enowaGallerySliderControlButtonsContainer`)
+
+                        // ICON BUTTONS ================================================ //
+                        // ============================================================= //
+
+                            var getGallerySlidesNavigationButtonLeft = document.querySelector(`.enowaGallerySliderControlButtonsLeftButtonElement`)
+                            var getGallerySlidesNavigationButtonRight = document.querySelector(`.enowaGallerySliderControlButtonsRightButtonElement`)
+
+                        // BUTTON CLICKERS ============================================= //
+                        // ============================================================= //
+
+                            var getGallerySlidesNavigationClickerLeft = document.querySelector(`.enowaGallerySliderControlButtonsLeftClickersContainer`)
+                            var getGallerySlidesNavigationClickerRight = document.querySelector(`.enowaGallerySliderControlButtonsRightClickersContainer`)
+
+
+                            enowaGallerySliderSlideTextContentSideContentResizer
+
+
+
+                // GALLERY SLIDES AND SLIDE ELEMENTS =================================== //
+                // ===================================================================== //
+
+                    // PAGE DEFAULT BANNER DISPLAY CONTAINER VARIABLES ================= //
+                    // ================================================================= //
+
+                        var getGallerySliderDefaultBannerMainContainer = document.querySelector(`.enowaGallerySliderDefaultBanner`)
+
+
+
+                    // PAGE GALLERY SLIDER DISPLAY CONTAINER VARIABLES ================= //
+                    // ================================================================= //
+
+                        var getGallerySlidesMainContainer = document.querySelector(`.enowaGallerySliderElement`)
+
+                            var getGallerySlidesMainSlideMover = document.querySelector(`.enowaGallerySliderMover`)
+
+
+
+                                // GALLERY SLIDE ELEMENTS ============================== //
+                                // ===================================================== //
+
+                                    var getGallerySlideCtaButtonMainContainer = document.querySelector(`.enowaGallerySliderSlideTextContentSideContentResizer`)
+
+
+            // STRINGS ================================================================= //
+            // ========================================================================= //
+
+            // NUMBERS ================================================================= //
+            // ========================================================================= //
+
+                var authoredContentCount = 0
+                var gallerySliderBlockCounter = 0
+                var galleryContentBlockDividerCount = 0
+
+                var gallerySliderLeftCounter = 0
+                var gallerySliderRightCounter = 0
+
+            // ARRAYS ================================================================== //
+            // ========================================================================= //
+
+
+
+
+
+
+
+        // FUNCTIONS FOR USE =========================================================== //
+        // ============================================================================= //
+
+            // FOR GALLERY SLIDER CONTENT COUNT ======================================== //
+            // ========================================================================= //
+
+                function gallerySliderContentFunction () {
+
+                    // CHECK AVAILABILITY OF AUTHORED INFORMATION ====================== //
+                    // ================================================================= //
+
+                        countAuthoredContentFunction()
+
+
+
+                }
+
+                    // MINI FUNCTIONS ================================================== //
+                    // ================================================================= //
+
+                        // COUNT AVAILABLE AUTHORED CONTENT FUNCTION =================== //
+                        // ============================================================= //
+
+                            function countAuthoredContentFunction () {
+
+                                // UPDATE ASSOCIATED AUTHORED CONTENT COUNTERS ========= //
+                                // ===================================================== //
+
+                                    // AUTHORED CONTENT COUNT ========================== //
+                                    // ================================================= //
+
+                                        authoredContentCount = Number(getGallerySlidesMainSlideMover.children.length)
+
+                                    // GALLERY SLIDER COUNT ============================ //
+                                    // ================================================= //
+
+                                        gallerySliderBlockCounter = Number(authoredContentCount + `00`)
+
+                                    // GALLERY CONTENT BLOCK DIVIDER COUNT ============= //
+                                    // ================================================= //
+
+                                        galleryContentBlockDividerCount = (gallerySliderBlockCounter/authoredContentCount)/authoredContentCount
+
+
+
+
+
+                                // APPLY COUNTERS TO AUTHORED CONTENT FOR SLIDER ======= //
+                                // ===================================================== //
+
+                                    // CHECK IF AUTHORED CONTENT EXISTS OR NOT ========= //
+                                    // ================================================= //
+
+                                        // IF NO CONTENT =============================== //
+                                        // ============================================= //
+
+                                            if ( authoredContentCount == 0 || authoredContentCount == undefined || authoredContentCount < 1) {
+
+                                                console.log(`NO CONTENT...`)
+
+                                                // SWITCH ON DEFAULT DISPLAY BANNER ==== //
+                                                // ===================================== //
+
+                                                    getGallerySliderDefaultBannerMainContainer.style.display = `block`
+
+                                                // SWITCH OFF GALLERY SLIDER =========== //
+                                                // ===================================== //
+
+                                                    getGallerySlidesMainContainer.style.display = `none`
+
+                                            }
+
+                                        // IF CONTENT EXISTS =========================== //
+                                        // ============================================= //
+
+                                            else {
+
+                                                // SWITCH BETWEEN DEFAULT AND GALLERY POPULATED SCREEN ================== //
+                                                // ====================================================================== //
+
+                                                    // SWITCH OFF DEFAULT DISPLAY BANNER ================================ //
+                                                    // ================================================================== //
+
+                                                        getGallerySliderDefaultBannerMainContainer.style.display = `none`
+
+                                                    // SWITCH ON GALLERY SLIDER ========================================= //
+                                                    // ================================================================== //
+
+                                                        getGallerySlidesMainContainer.style.display = `block`
+
+                                                // RUN LOOP TO APPLY TO ALL CHILDREN ==================================== //
+                                                // ====================================================================== //
+
+                                                    for ( slideBlockCount = 0; slideBlockCount < authoredContentCount; slideBlockCount++ ) {
+
+
+                                                        // UNIVERSAL GALLERY SLIDE BLOCK SELECTOR VARIABLE ============== //
+                                                        // ============================================================== //
+
+                                                            var getGallerySlideBlock = getGallerySlidesMainSlideMover.children[slideBlockCount]
+
+
+                                                        // APPLY NEW WIDTH STYLE TO MAIN GALLERY SLIDER CONTAINER ======= //
+                                                        // ============================================================== //
+
+                                                            getGallerySlidesMainSlideMover.style.width = gallerySliderBlockCounter + `%`
+
+
+                                                        // APPLY NEW WIDTH STYLE TO GALLERY SLIDE BLOCK ================= //
+                                                        // ============================================================== //
+
+                                                            getGallerySlideBlock.style.width = galleryContentBlockDividerCount + `%`
+
+                                                    }
+
+
+
+
+                                                // APPLY CHANGES TO INDIVIDUAL ELEMENTS ================================= //
+                                                // ====================================================================== //
+
+                                                    // FOR SLIDER NAVIGATION CONTROL BUTTONS ============================ //
+                                                    // ================================================================== //
+
+                                                        // MAIN OVERALL CONTROLLER ====================================== //
+                                                        // ============================================================== //
+
+                                                            getGallerySlidesNavigationContainerMain.style.display = `block`
+
+                                                        // LEFRT AND RIGHT CONTROLLERS AND ELEMENTS ===================== //
+                                                        // ============================================================== //
+
+                                                            // ICON BUTTONS ============================================= //
+                                                            // ========================================================== //
+
+                                                                getGallerySlidesNavigationButtonLeft.style.opacity = `0`
+                                                                getGallerySlidesNavigationButtonRight.style.opacity = `1`
+
+                                                            // BUTTON CLICKERS ========================================== //
+                                                            // ========================================================== //
+
+                                                                getGallerySlidesNavigationClickerLeft.style.display = `none`
+                                                                getGallerySlidesNavigationClickerRight.style.display = `block`
+
+                                            }
+
+
+
+                            }
+
+
+
+
+                        // LEFT RIGHT GALLERY SLIDER NAVIGATION CLICKER FUNCTIONS ====== //
+                        // ============================================================= //
+
+                            // LEFT CLICKER FUNCTION =================================== //
+                            // ========================================================= //
+
+                                function leftGallerySliderNavigationClickerFunction () {
+
+                                    // CHECK IF LEFT LIMITER IS HIT OR NOT ============= //
+                                    // ================================================= //
+
+                                        // IF LEFT LIMITER IS HIT ====================== //
+                                        // ============================================= //
+
+                                            if ( gallerySliderLeftCounter == 0 ) {
+
+                                                // SWITCH OFF LEFT BUTTON AND ELEMENTS = //
+                                                // ===================================== //
+
+                                                    switchOffLeftClickersAndDisplayButtonsFunction()
+
+                                            }
+
+                                        // IF LEFT LIMITER IS NOT HIT ================== //
+                                        // ============================================= //
+
+                                            else {
+
+
+                                                // SWITCH ON RIGHT BUTTON ELEMENTS ===== //
+                                                // ===================================== //
+
+                                                    switchOnRightClickersAndDisplayButtonsFunction()
+
+
+                                                // UPDATE DIRECTION COUNTERS =========== //
+                                                // ===================================== //
+
+                                                    gallerySliderLeftCounter = (gallerySliderLeftCounter - 100)
+                                                    gallerySliderRightCounter = (gallerySliderRightCounter + 100)
+
+                                                    console.log("LEFT COUNT: " + " " + gallerySliderLeftCounter)
+
+
+                                                // UPDATE GALLERY SLIDER POSITION ====== //
+                                                // ===================================== //
+
+                                                    getGallerySlidesMainSlideMover.style.margin = `0% 0% 0%` + (gallerySliderRightCounter + `%`)
+
+
+                                                // PRE ACTION LIMIT CHECK ============== //
+                                                // ===================================== //
+
+                                                    // IF LIMIT REACHED AFTER CHANGE === //
+                                                    // ================================= //
+
+                                                        if ( gallerySliderLeftCounter == 0 ) {
+
+                                                            switchOffLeftClickersAndDisplayButtonsFunction()
+
+                                                        }
+
+                                            }
+
+                                }
+
+
+                                    // MINI LEFT CLICKER FUNCTIONS ===================== //
+                                    // ================================================= //
+
+                                        function switchOffLeftClickersAndDisplayButtonsFunction () {
+                                            
+                                            // SWITCH OFF LEFT CLICKER ================= //
+                                            // ========================================= //
+
+                                                getGallerySlidesNavigationClickerLeft.style.display = `none`
+                                            
+                                            // FADE OUT LEFT DISPLAY BUTTON ============ //
+                                            // ========================================= //
+
+                                                getGallerySlidesNavigationButtonLeft.style.opacity = `0`
+
+                                        }
+
+
+
+
+                                    // MINI LEFT CLICKER OPPOSITE BUTTON FUNCTIONS ===== //
+                                    // ================================================= //
+
+                                        function switchOnLeftClickersAndDisplayButtonsFunction () {
+
+
+                                            // CHECK IF ALREADY SWITCHED ON AND VISIBLE  //
+                                            // ========================================= //
+
+                                                // IF ON AND VISIBLE THEN SKIP ========= //
+                                                // ===================================== //
+
+                                                    if ( 
+                                                        
+                                                        getGallerySlidesNavigationClickerLeft.style.display == "block" && 
+                                                        getGallerySlidesNavigationButtonLeft.style.opacity == "1"
+                                                    
+                                                    ) 
+                                                    
+                                                    {}
+
+                                                // ELSE SWICTH ON AND MAKE VISIBLE ===== //
+                                                // ===================================== //
+                                                    
+                                                    else {
+
+                                                        getGallerySlidesNavigationClickerLeft.style.display = "block"
+                                                        getGallerySlidesNavigationButtonLeft.style.opacity = "1"
+
+                                                    }
+
+
+                                        }
+
+
+
+
+
+
+
+
+
+                            // RIGHT CLICKER FUNCTION ================================== //
+                            // ========================================================= //
+
+                                function rightGallerySliderNavigationClickerFunction () {
+
+                                    // CHECK IF RIGHT LIMITER IS HIT OR NOT ============ //
+                                    // ================================================= //
+
+                                        // IF RIGHT LIMITER IS HIT ===================== //
+                                        // ============================================= //
+
+                                            if ( gallerySliderRightCounter == (Number("-" + gallerySliderBlockCounter)) ) {
+
+                                                // SWITCH OFF RIGHT BUTTON AND ELEMENTS  //
+                                                // ===================================== //
+
+                                                    switchOffRightClickersAndDisplayButtonsFunction()
+
+                                            }
+
+                                        // IF RIGHT LIMITER IS NOT HIT ================= //
+                                        // ============================================= //
+
+                                            else {
+
+
+                                                // SWITCH ON LEFT BUTTON ELEMENTS ====== //
+                                                // ===================================== //
+
+                                                    switchOnLeftClickersAndDisplayButtonsFunction()
+
+
+                                                // UPDATE DIRECTION COUNTERS =========== //
+                                                // ===================================== //
+
+                                                    gallerySliderLeftCounter = (gallerySliderLeftCounter + 100)
+                                                    gallerySliderRightCounter = (gallerySliderRightCounter - 100)
+
+                                                    console.log("LEFT COUNT: " + " " + gallerySliderLeftCounter)
+
+
+                                                // UPDATE GALLERY SLIDER POSITION ====== //
+                                                // ===================================== //
+
+                                                    getGallerySlidesMainSlideMover.style.margin = `0% 0% 0%` + (gallerySliderRightCounter + `%`)
+
+
+                                                // PRE ACTION LIMIT CHECK ============== //
+                                                // ===================================== //
+
+                                                    // IF LIMIT REACHED AFTER CHANGE === //
+                                                    // ================================= //
+
+                                                        if ( gallerySliderRightCounter == ( (Number("-" + gallerySliderBlockCounter)) + 100) ) {
+
+                                                            switchOffRightClickersAndDisplayButtonsFunction()
+
+                                                        }
+
+                                            }
+
+                                }
+
+
+                                    // MINI RIGHT CLICKER FUNCTIONS ==================== //
+                                    // ================================================= //
+
+                                        function switchOffRightClickersAndDisplayButtonsFunction () {
+                                            
+                                            // SWITCH OFF RIGHT CLICKER ================ //
+                                            // ========================================= //
+
+                                                getGallerySlidesNavigationClickerRight.style.display = `none`
+                                            
+                                            // FADE OUT RIGHT DISPLAY BUTTON =========== //
+                                            // ========================================= //
+
+                                                getGallerySlidesNavigationButtonRight.style.opacity = `0`
+
+                                        }
+
+
+
+
+                                    // MINI RIGHT CLICKER OPPOSITE BUTTON FUNCTIONS ==== //
+                                    // ================================================= //
+
+                                        function switchOnRightClickersAndDisplayButtonsFunction () {
+
+
+                                            // CHECK IF ALREADY SWITCHED ON AND VISIBLE  //
+                                            // ========================================= //
+
+                                                // IF ON AND VISIBLE THEN SKIP ========= //
+                                                // ===================================== //
+
+                                                    if ( 
+                                                        
+                                                        getGallerySlidesNavigationClickerRight.style.display == "block" && 
+                                                        getGallerySlidesNavigationButtonRight.style.opacity == "1"
+                                                    
+                                                    ) 
+                                                    
+                                                    {}
+
+                                                // ELSE SWICTH ON AND MAKE VISIBLE ===== //
+                                                // ===================================== //
+                                                    
+                                                    else {
+
+                                                        getGallerySlidesNavigationClickerRight.style.display = "block"
+                                                        getGallerySlidesNavigationButtonRight.style.opacity = "1"
+
+                                                    }
+
+
+                                        }
+
+
+
+
+
+
+
+        // EVENTS FOR USE ============================================================== //
+        // ============================================================================= //
+
+            // SLIDER LEFT CLICKER BUTTON ============================================== //
+            // ========================================================================= //
+
+                getGallerySlidesNavigationClickerLeft.addEventListener("click", function () {
+
+                    leftGallerySliderNavigationClickerFunction()
+
+                })
+
+            // SLIDER RIGHT CLICKER BUTTON ============================================= //
+            // ========================================================================= //
+
+                getGallerySlidesNavigationClickerRight.addEventListener("click", function () {
+
+                    rightGallerySliderNavigationClickerFunction()
+
+                })
+
+
+
+
+
+
+
+        // AUTORUNS ==================================================================== //
+        // ============================================================================= //
+
+            // FOR WHEN GALLERY SLIDER COUNT CHANGES =================================== //
+            // ========================================================================= //
+
+                gallerySliderContentFunction()
+
+
+    </script>

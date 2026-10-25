@@ -1,0 +1,123 @@
+<style>
+
+
+	/* MAIN CONTAINERS ================================================================ */
+    /* ============================================================================================== */
+
+        .enowaSectionHeadlineContainer{
+
+            width:100%;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:50px auto 0px auto;
+            position:relative;
+            transition:all 600ms ease;
+            -o-transition:all 600ms ease;
+            -ms-transition:all 600ms ease;
+            -moz-transition:all 600ms ease;
+            -webkit-transition:all 600ms ease;
+
+        }
+
+            .enowaSectionHeadlineContentResizer{
+
+                width:800px;
+                color:#3A5668;
+                margin:0px auto;
+                position:relative;
+                text-align:left;
+                transition:all 600ms ease;
+                -o-transition:all 600ms ease;
+                -ms-transition:all 600ms ease;
+                -moz-transition:all 600ms ease;
+                -webkit-transition:all 600ms ease;
+
+            }
+
+
+
+
+
+
+	/* DEFAULT STATES ================================================================== */
+    /* ============================================================================================== */
+
+        /* DEFAULT SECTION HEADLINE CONTENT FILL ================================== */
+        /* ========================================================================================== */
+
+        /* SPECIAL TAGS ================================================================ */
+        /* ========================================================================================== */
+
+            p{
+
+                margin:0;
+                transition:all 600ms ease;
+                -o-transition:all 600ms ease;
+                -ms-transition:all 600ms ease;
+                -moz-transition:all 600ms ease;
+                -webkit-transition:all 600ms ease;
+
+            }
+
+
+
+
+                /* SECTION DEFAULT SECTION HEADLINE CONTAINER ====== */
+                /* ================================================================================== */
+
+                    .enowaSectionHeadlineContentTextContainer{
+
+                        width:100%;
+                        color:#3A5668;
+                        padding:0px 0px 0px 0px;
+                        font-size:20px;
+                        font-weight:900;
+                        letter-spacing:0.5px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    }
+
+                        .enowaSectionHeadlineContentTextActual{
+
+                            width:100%;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        }
+
+                            
+
+
+</style>
+
+
+
+<!-- MAIN CONTAINER ======================================================================= -->
+<!-- =============================================================================================== -->
+
+    <div class="enowaSectionHeadlineContainer">
+
+        <div class="enowaSectionHeadlineContentResizer">
+
+            <div class="enowaSectionHeadlineContentTextContainer">
+
+                <div class="enowaSectionHeadlineContentTextActual">
+
+                    ${properties.sectionHeadlineText || 'no text to display'}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
